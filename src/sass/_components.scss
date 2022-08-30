@@ -1,0 +1,48 @@
+.section-padding {
+  padding: 4rem 2rem 4rem 2rem;
+}
+
+.section-heading {
+  position: relative;
+  font-size: 3rem;
+  font-family: "Oleo Script", cursive;
+  margin-bottom: 4rem;
+  letter-spacing: 0.1rem;
+  color:$dark;
+
+
+  &--white{
+    color:$white;
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: -.3rem;
+    left: 0;
+    width: 20rem;
+    height: 0.23rem;
+    background-image: $gradient-solid;
+  }
+
+  &--white::after{
+   background: none;
+   background-color: $white;
+  }
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+@media(min-width:768px){
+    .section-heading{
+      margin-bottom: 8rem;
+    }
+    .section-padding{
+      padding: 6rem 2rem 4rem 2rem;
+    }
+}
